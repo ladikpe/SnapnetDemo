@@ -43,6 +43,7 @@ stages:
       displayName: 'Use PHP version $(phpVersion)'
 
     - script: composer install --no-interaction --prefer-dist
+        sudo apt composer update
       workingDirectory: $(rootFolder)
       displayName: 'Composer install'
 
